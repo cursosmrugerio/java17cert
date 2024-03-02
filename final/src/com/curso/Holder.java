@@ -9,7 +9,7 @@ class Holder {
         Holder b = new Holder(10);
         a.link = b;
         b.link = setIt(a, b);
-        System.out.println(b.link.value);
+        //System.out.println(b.link.value);
         System.out.println(a.link.value);
         //System.out.println(a.link.value + " " + b.link.value);
     }

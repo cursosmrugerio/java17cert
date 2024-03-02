@@ -1,7 +1,5 @@
 package com.inicio;
 
-import java.util.Objects;
-
 public class Cliente extends Object {
 	
 	public Cliente(String nombreCompleto, String curp) {

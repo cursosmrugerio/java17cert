@@ -4,7 +4,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		System.out.println("V2 INTERFACES");
+		System.out.println("V2 INTERFACES*");
 		Observer obs1 = new Texto("Hello");
 		Observer obs2 = new Image("Duck");
 		Observer obs3 = new ScrollBar();

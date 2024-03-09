@@ -12,20 +12,23 @@ public class Mouse implements Subject {
 		listaObserver = new ArrayList<>();
 	}
 
-	void attach(Observer o) {
+	@Override
+	public void attach(Observer o) {
 		listaObserver.add(o);
 	}
 
-	void detach(Observer o) {
+	@Override
+	public void detach(Observer o) {
 		listaObserver.remove(o);
 	}
 
-	void notificar() {
+	@Override
+	public void notificar() {
 		for (Observer o : listaObserver)
 			o.update();
 	}
 
-	void click() {
+	public void click() {
 		notificar();
 	}
 

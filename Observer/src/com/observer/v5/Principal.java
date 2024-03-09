@@ -8,7 +8,8 @@ public class Principal {
 
 		Mouse mouse = new Mouse();
 
-		Texto t = new Texto("Hello",mouse);
+		//Texto t = new Texto("Hello",mouse);
+		
 		new Image("Duck",mouse);
 		new ScrollBar(mouse);
 		
@@ -17,7 +18,7 @@ public class Principal {
 		System.out.println("*******");
 		
 		new Gif("Coffee",45.0,mouse);
-		mouse.detach(t);
+		//mouse.detach(t);
 
 		mouse.click();
 		

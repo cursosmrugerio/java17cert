@@ -11,7 +11,7 @@ public class Principal {
 		Observer obs1 = new Texto("Hello",mouse);
 		Observer obs2 = new Image("Duck",mouse);
 		Observer obs3 = new ScrollBar(mouse);
-		
+				
 		mouse.click();
 
 		System.out.println("*******");

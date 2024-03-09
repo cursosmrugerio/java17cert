@@ -1,7 +1,5 @@
 package com.observer.v5;
 
-import java.util.Objects;
-
 public class Texto extends Observer {
 	
 	String texto; //HAS-A
@@ -19,13 +17,5 @@ public class Texto extends Observer {
 	void update() {
 		showTexto();
 	}
-
-	@Override
-	public boolean equals(Object obj) {
-		Texto other = (Texto) obj;
-		return Objects.equals(texto, other.texto);
-	}
 	
-	
-
 }

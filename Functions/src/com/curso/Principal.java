@@ -2,6 +2,7 @@ package com.curso;
 
 import com.curso.pojo.Empleado;
 import java.util.*;
+import java.util.function.UnaryOperator;
 
 public class Principal {
 
@@ -18,8 +19,17 @@ public class Principal {
 		listaEmpleados.add(e3);
 		listaEmpleados.add(e4);
 		
-		//listaEmpleados.forEach(t -> System.out.println(t));
 		listaEmpleados.forEach(System.out::println);
+		
+		System.out.println("*********");
+				
+		listaEmpleados.replaceAll(e -> {
+			e.sueldo = e.sueldo * 2;
+			return e;
+		});
+		
+		listaEmpleados.forEach(t -> System.out.println(t));
+		//listaEmpleados.forEach(System.out::println);
 		
 		System.out.println("*********");
 		

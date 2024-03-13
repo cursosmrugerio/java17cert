@@ -19,11 +19,23 @@ public class Texto extends Observer {
 	void update() {
 		showTexto();
 	}
-	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(texto);
+	}
+
 	@Override
 	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
 		Texto other = (Texto) obj;
 		return Objects.equals(texto, other.texto);
 	}
+
 	
 }

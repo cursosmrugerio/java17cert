@@ -25,7 +25,14 @@ public class Principal {
 		
 		TriFunction<Integer,String,Double,String> tf = Principal::hacerRico;
 		System.out.println(tf.apply(2_000,"Cadena",4.0));
-
+		
+		DoubleBinaryOperator dbo = Principal::elevarPotencia;
+		System.out.println(dbo.applyAsDouble(4, 3));
+		
+		Supplier<String> s = Principal::getParadigma;
+		System.out.println(s.get());
+		
+		
 	}
 	
 	static String hacerRico(int i) {
@@ -45,7 +52,7 @@ public class Principal {
 	}
 	
 	static String getParadigma() {
-		return "Java Funcional";
+		return "Java Functional!!!";
 	}
 
 }

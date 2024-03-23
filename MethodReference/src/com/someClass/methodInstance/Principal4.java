@@ -6,11 +6,11 @@ public class Principal4 {
 
 		String resultado;
 		
-		String cadena1 = "Hola ";
+		String cadena1 = "Hola Mundo ";
 		String cadena2 = "Java Reactive";
 				
-		resultado = Utils.transforma(
-				cadena2, cadena1::concat);
+		resultado = Utils.transforma(cadena1,
+				cadena2, String::concat);
 		
 		System.out.println(resultado);
 		

@@ -1,13 +1,13 @@
 package com.someClass.methodInstance;
 
-import java.util.function.UnaryOperator;
+import java.util.function.BinaryOperator;
 
 public class Utils {
 	
-	public static String transforma(String s,
-			UnaryOperator<String> uo) {
+	public static String transforma(String s1, String s2,
+			BinaryOperator<String> bo) {
 		
-		return uo.apply(s);
+		return bo.apply(s1,s2);
 	}
 
 }

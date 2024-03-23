@@ -2,7 +2,6 @@ package com.someClass.methodInstance;
 
 import java.util.function.BiFunction;
 import java.util.function.ToIntBiFunction;
-import java.util.function.BiPredicate;
 
 public class Principal2 {
 	
@@ -21,16 +20,14 @@ public class Principal2 {
 		
 		ToIntBiFunction<Principal2,String> tibf = Principal2::getCantidadLetras;
 		System.out.println(tibf.applyAsInt(pri2,"JAVA REACTIVE TTT"));
-//		
-//		System.out.println("****************");
-//		
-//		BiPredicate<Integer,Integer> bp = pri2::sumaMayor10;
-//		System.out.println(bp.test(4, 5));
-//		System.out.println(bp.test(6, 5));
-
 		
+		System.out.println("****************");
+		
+		TriPredicate<Principal2,Integer,Integer> bp = Principal2::sumaMayor10;
+		System.out.println(bp.test(pri2,6, 5));
+		System.out.println(bp.test(pri2,3, 5));
+
 	}
-	
 	
 	int getCantidadLetras(String s) {
 		return s.length();
